@@ -64,18 +64,13 @@ public class TennisConstraintProvider implements ConstraintProvider {
 
     // Faster, but does not combine well with other constraints in the same level
     private Constraint fairAssignmentCountPerTeam(ConstraintFactory constraintFactory) {
-//        LoadBalanceByCountAccumulateFunction function = new LoadBalanceByCountAccumulateFunction();
-//        LoadBalanceByCountAccumulateFunction.LoadBalanceByCountData context = function.createContext();
-//        function.init(context);
-//        function.accumulate(context, a);
-//        assertEquals(1000, function.getResult(context).getZeroDeviationSquaredSumRootMillis());
 
         //return (long) (Math.sqrt((double) squaredSum) * 1000);
         return constraintFactory.from(TeamAssignment.class)
                 .filter(teamAssignment -> teamAssignment.getTeam() != null)
                 .groupBy(TeamAssignment::getTeam, loadBalanceByCount())
                 .penalize("fairAssignmentCountPerTeam", HardMediumSoftScore.ONE_MEDIUM,
-                          (team, total) -> (int) (Math.sqrt(total) * 1000));
+                          (team, result) -> (int) (Math.sqrt(((Long[])result)[1]) * 1000.0));
     }
 
     // ############################################################################
