@@ -47,8 +47,7 @@
           <configuration>
             <imagesDir>.</imagesDir>
             <attributes>
-              <project-version>${project.version}</project-version>
-              <version-org-spring-framework-boot>${version.org.springframework.boot}</version-org-spring-framework-boot>
+              <revnumber>${project.version}</revnumber>
               <!-- Custom attributes -->
               <codeDir>${project.build.directory}/code</codeDir>
               <COMMUNITY-ONLY/>

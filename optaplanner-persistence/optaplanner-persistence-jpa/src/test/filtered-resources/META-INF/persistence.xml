@@ -20,6 +20,21 @@
     <class>org.optaplanner.persistence.jpa.impl.score.buildin.bendable.BendableScoreHibernateTypeTest$TestJpaEntity</class>
     <class>org.optaplanner.persistence.jpa.impl.score.buildin.bendablelong.BendableLongScoreHibernateTypeTest$TestJpaEntity</class>
     <class>org.optaplanner.persistence.jpa.impl.score.buildin.bendablebigdecimal.BendableBigDecimalScoreHibernateTypeTest$TestJpaEntity</class>
+
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.bendable.BendableScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.bendablebigdecimal.BendableBigDecimalScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.bendablelong.BendableLongScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.hardmediumsoft.HardMediumSoftScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.hardmediumsoftbigdecimal.HardMediumSoftBigDecimalScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.hardmediumsoftlong.HardMediumSoftLongScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.hardsoft.HardSoftScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.hardsoftbigdecimal.HardSoftBigDecimalScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.hardsoftdouble.HardSoftDoubleScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.hardsoftlong.HardSoftLongScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.simple.SimpleScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.simplebigdecimal.SimpleBigDecimalScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.simpledouble.SimpleDoubleScoreConverterTest$TestJpaEntity</class>
+    <class>org.optaplanner.persistence.jpa.api.score.buildin.simplelong.SimpleLongScoreConverterTest$TestJpaEntity</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
     <properties>
